@@ -38,16 +38,16 @@ class QuotedCommentsWidget extends WP_Widget {
 	?>
 			<?php echo $before_widget; ?>
 				<?php if ( $title ) echo $before_title . $title . $after_title; ?>
-				<ul id="recentcomments"><?php
+				<ol id="recentcomments"><?php
 				if ( $comments ) : foreach ( (array) $comments as $comment) :
 				echo  '<li class="recentcomments">';
 
 				echo '<p class="content">“' . get_comment_excerpt() . '”</p>';
 				
-				echo '<a class="comment-author" href="' . get_comment_link($comment->comment_ID) . '">' . get_comment_author() . '</a> on <a href="' . get_permalink($comment->comment_post_ID) . '">' . get_the_title($comment->comment_post_ID) . '</a>';
+				echo '<div class="comment-meta"><a class="comment-author" href="' . get_comment_link($comment->comment_ID) . '">' . get_comment_author() . '</a> on <a href="' . get_permalink($comment->comment_post_ID) . '">' . get_the_title($comment->comment_post_ID) . '</a></div>';
 					
 					echo '</li>';
-				endforeach; endif;?></ul>
+				endforeach; endif;?></ol>
 			<?php echo $after_widget; ?>
 	<?php
 	}
