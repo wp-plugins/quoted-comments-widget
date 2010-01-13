@@ -4,7 +4,7 @@ Plugin Name: Quoted Comments Widget
 Description: Adds a widget which shows the most recent comments, with quotes.
 Author: Rattle
 Author URI: http://www.rattlecentral.com
-Version: 0.1
+Version: 0.2.1
 */
 
 /* Note currently hard-coded. NOT for wider distribution... */

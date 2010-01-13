@@ -3,7 +3,7 @@ Contributors: frankieroberto
 Tags: comments, widget
 Requires at least: 2.8
 Tested up to: 2.9.1
-Stable tag: 0.2
+Stable tag: 0.2.1
 
 This plugin makes a widget available which allows you to list the most recent comments to your blog, along with a short excerpt from the comment.
 
@@ -40,3 +40,6 @@ You can style your list by adding the following code to the style.css file in yo
 = 0.2 =
 * Improved documentation.
 * Plugin compatibility updated.
+
+= 0.2.1 =
+* Minor fix.
